@@ -13,12 +13,12 @@ public class MainNotificationEmitter {
             if (!(gcBean instanceof NotificationEmitter notificationEmitter)) {
                 continue;
             }
-            System.out.println("NotificationEmitter" + gcBean.getName());
+            System.out.println("NotificationEmitter " + gcBean.getName());
             notificationEmitter.addNotificationListener((notification, handback) -> {
 
                 var type = notification.getType();
 
-                System.out.printf("Notification  issued -> %s", type);
+                System.out.printf("Notification  issued -> %s\n", type);
             }, notification -> notification.getType()
                     .equals(GarbageCollectionNotificationInfo.GARBAGE_COLLECTION_NOTIFICATION), null);
         }
