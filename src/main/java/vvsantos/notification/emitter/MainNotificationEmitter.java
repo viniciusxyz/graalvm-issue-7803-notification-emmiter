@@ -24,6 +24,7 @@ public class MainNotificationEmitter {
         }
         System.out.println("Notifier added");
         System.gc();
+        Thread.sleep(3_000);
         System.out.println("End");
     }
 
