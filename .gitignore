@@ -1,0 +1,10 @@
+*.log
+*.zip
+logs/
+target/
+test-output/
+.settings
+.project
+.classpath
+*.iml
+/.idea/
